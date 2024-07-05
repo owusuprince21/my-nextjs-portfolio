@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;600;800&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  font-family: "Fira Sans", sans-serif;
+  /* font-family: 'Space Grotesk', sans-serif; */
+  background: red;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.title {
+  position: relative;
+  display: inline-block;
+  border-bottom: linear-gradient(135deg, #fd746c 0%, #ff9068 100%);
+  padding-bottom: 5px;
+}
+
+.title::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 30%;
+  height: 3px;
+  background: linear-gradient(135deg, #fd746c 0%, #ff9068 100%);
+}
+
+.gradient-border-button {
+  border: 3px solid;
+  border-image: linear-gradient(135deg, #fd746c 0%, #ff9068 100%);
+  border-image-slice: 1;
+  border-radius: 20px;
+  padding: 10px 20px;
+}
+.gradient-text {
+  /* background: linear-gradient(to right, #4776e6, #8e54e9); */
+  background:linear-gradient(135deg, #fd746c 0%, #ff9068 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient-bg {
+  background:linear-gradient(135deg, #fd746c 0%, #ff9068 100%);
+}
+
+.navlink {
+  background-image: linear-gradient(135deg, #fd746c 0%, #ff9068 100%);
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 3px; /* 3px is the height of the border */
+  transition: background-size 0.3s ease-in-out;
+}
+
+.link:hover {
+  background-image: linear-gradient(135deg, #fd746c 0%, #ff9068 100%);
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 3px; /* 3px is the height of the border */
+  transition: background-size 0.3s ease-in-out;
+}

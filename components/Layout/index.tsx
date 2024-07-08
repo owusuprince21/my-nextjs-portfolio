@@ -2,6 +2,7 @@ import React, { FC } from "react";
 import Header from "../Header";
 import Footer from "../Footer";
 import FAB from "../FAB";
+import { Analytics } from "@vercel/analytics/react";
 
 const Layout: FC<{ children: React.ReactNode }> = ({ children }) => {
   return (
@@ -10,6 +11,7 @@ const Layout: FC<{ children: React.ReactNode }> = ({ children }) => {
       <Header />
       <section className="max-w-7xl px-6 lg:px-4 mx-auto">
         {children}
+        <Analytics />
       </section>
       <Footer />
     </div>

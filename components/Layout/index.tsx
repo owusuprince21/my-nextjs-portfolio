@@ -3,6 +3,7 @@ import Header from "../Header";
 import Footer from "../Footer";
 import FAB from "../FAB";
 import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const Layout: FC<{ children: React.ReactNode }> = ({ children }) => {
   return (
@@ -12,6 +13,7 @@ const Layout: FC<{ children: React.ReactNode }> = ({ children }) => {
       <section className="max-w-7xl px-6 lg:px-4 mx-auto">
         {children}
         <Analytics />
+        <SpeedInsights/>
       </section>
       <Footer />
     </div>

@@ -2,9 +2,9 @@ import { useRouter } from "next/router";
 import React, { FC, ReactNode } from "react";
 
 const FAB: FC<{ title: string; icon: ReactNode }> = ({ title, icon }) => {
-  const router = useRouter();
+  // const router = useRouter();
   const goToContact = () => {
-    router.push("/contact");
+    window.open("https://www.buymeacoffee.com/prince_owusu", '_blank');
   };
   return (
     <button

@@ -14,7 +14,7 @@ const TestimonialCard: FC<ITestimony> = ({ name, message, image,title }) => {
     }
     return (
         <div style={{ background: styles.background }} className='border-2 border-gray-600 relative rounded-md p-6 px-10'>
-            <Image className='absolute -top-6 -left-6 w-16 h-16' src={image} alt={name} width={100} height={100} />
+            <Image className='absolute -top-6 -left-6 w-16 h-16 rounded-full object-cover' src={image} alt={name} width={100} height={100} />
             <p>
                 {message}
             </p>

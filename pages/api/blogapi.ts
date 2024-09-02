@@ -8,7 +8,7 @@ export default async function BLOGAPI(req: NextApiRequest, res: NextApiResponse)
        return res.status(405).json({error: "Method Not Allowed"})
     }
     
-    const apiKey = process.env.API_KEY;
+    const apiKey = process.env.NEXT_PUBLIC_API_KEY;
     const url = `https://newsapi.org/v2/everything?q=bitcoin&apiKey=${apiKey}`;
 
     try {

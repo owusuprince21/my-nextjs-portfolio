@@ -40,9 +40,9 @@ const Hero = () => {
         1000,
         'I am a passionate Software Developer',
         1000,
-        'I create responsive and dynamic web applications',
+        'I create responsive and dynamic web Apps',
             1000,
-            'Proficient in JavaScript, React, and Node.js.',
+            'Proficient in JavaScript, React, and Node.js',
             1000
       ]}
       wrapper="span"

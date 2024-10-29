@@ -1,4 +1,5 @@
-import { FaEnvelope, FaInstagram, FaTwitter, FaGithub, FaLinkedin, FaYoutube} from 'react-icons/fa'
+import { FaEnvelope, FaInstagram, FaTwitter, FaGithub, FaLinkedin, FaYoutube } from 'react-icons/fa'
+import { BsTwitterX } from "react-icons/bs";
 export const CONTACTS = [
     {
         "link": "mailto:powusu050@gmail.com",
@@ -7,8 +8,8 @@ export const CONTACTS = [
     },
     {
         "link": "https://twitter.com/_Owusu_Prince",
-        "icon": FaTwitter,
-        "color": "#1da1f2",
+        "icon": BsTwitterX,
+        "color": "#ffffff",
     },
     {
         "link": "https://www.linkedin.com/in/prince-owusu-2b23631b5/",

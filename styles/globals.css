@@ -28,10 +28,11 @@ body::-webkit-scrollbar {
 .title::after {
   content: "";
   position: absolute;
-  bottom: -2px;
+  bottom: -4px;
   left: 0;
-  width: 30%;
-  height: 3px;
+  width: 70%;
+  border-radius: 40px;
+  height: 4px;
   background: linear-gradient(135deg, #fd746c 0%, #ff9068 100%);
 }
 
